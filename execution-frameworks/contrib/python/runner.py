@@ -25,7 +25,7 @@ import unidecode
 TECHNIQUE_DIRECTORY_PATTERN = 'T*'
 ATOMICS_DIR_RELATIVE_PATH = os.path.join("..", "..", "..", "atomics")
 HASH_DB_RELATIVE_PATH = "techniques_hash.db"
-COMMAND_TIMEOUT = 20
+COMMAND_TIMEOUT = 120
 
 ##########################################
 # Filesystem & Helpers
@@ -114,7 +114,7 @@ def check_dependencies(executor, cwd):
     input_arguments         = "input_arguments"
     
     # If the executor doesn't have dependencies_executor key it doesn't have dependencies. Skip
-    if dependencies not in executor or dependencies not in executor:
+    if dependencies not in executor or dependencies_executor not in executor:
         print("No '{}' or '{}' section found in the yaml file. Skipping dependencies check.".format(dependencies_executor,dependencies))
         return True
     
@@ -609,7 +609,7 @@ class AtomicRunner():
         # Gets Executors.
         executors = get_valid_executors(tech)
 
-        if len(executors) < position:
+        if len(executors) - 1 < position:
             print("The position '{}' couldn't be found.".format(position))
             print("The teqhnique {} has {} available tests for the current platform. Skipping...".format(technique_name,len(executors)))
             return False  

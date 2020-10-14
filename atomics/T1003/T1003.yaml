@@ -585,7 +585,7 @@ atomic_tests:
     file_path:
       description: File path for modified Sysinternals
       type: String
-      default: $env:TEMP
+      default: PathToAtomicsFolder\common_dependencies
 
   dependency_executor_name: powershell
   dependencies:

@@ -58,6 +58,7 @@ atomic_tests:
   description: |
     Delete a single file from the temporary directory using cmd.exe.
     Upon execution, no output will be displayed. Use File Explorer to verify the file was deleted.
+    CREATE THE FILE FIRST
   supported_platforms:
     - windows
 

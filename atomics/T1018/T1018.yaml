@@ -50,7 +50,7 @@ atomic_tests:
     target_domain:
       description: Domain to query for domain controllers
       type: String
-      default: domain.local
+      default: sakaryadlp.local
 
   executor:
     name: command_prompt

@@ -53,7 +53,6 @@ atomic_tests:
       Start-Sleep 5
 
     cleanup_command: |
-      Remove-Item #{file_path}\SharpHound.ps1 -Force -ErrorAction Ignore
       Remove-Item $env:Temp\*BloodHound.zip -Force
 
 - name: Run Bloodhound from Memory using Download Cradle
@@ -129,7 +128,7 @@ atomic_tests:
     url:
       description: url of payload to execute
       type: url
-      default: https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1086/src/test.ps1
+      default: https://raw.githubusercontent.com/emrahkaya/atomic-red-team/v6/atomics/T1086/src/test.ps1
   executor:
     name: command_prompt
     elevation_required: false
@@ -148,7 +147,7 @@ atomic_tests:
     url:
       description: url of payload to execute
       type: url
-      default: https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1086/src/test.xml
+      default: https://raw.githubusercontent.com/emrahkaya/atomic-red-team/v6/atomics/T1086/src/test.xml
   executor:
     name: command_prompt
     elevation_required: false
@@ -167,7 +166,7 @@ atomic_tests:
     url:
       description: url of payload to execute
       type: url
-      default: https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1086/src/mshta.sct
+      default: https://raw.githubusercontent.com/emrahkaya/atomic-red-team/v6/atomics/T1086/src/mshta.sct
   executor:
     name: command_prompt
     elevation_required: false
@@ -192,6 +191,7 @@ atomic_tests:
   description: |
    Execution of a PowerShell payload from the Windows Registry similar to that seen in fileless malware infections. Upon exection, open "C:\Windows\Temp" and verify that
    art-marker.txt is in the folder.
+   CLEANUP REQUIRES ATTENTION
   supported_platforms:
     - windows
   executor:

@@ -30,15 +30,11 @@ atomic_tests:
       description: What you want to execute
       type: String
       default: C:\windows\system32\cmd.exe
-    time:
-      description: What time 24 Hour
-      type: String
-      default: 20:10
   executor:
     name: command_prompt
     elevation_required: true
     command: |
-      SCHTASKS /Create /SC ONCE /TN spawn /TR #{task_command} /ST #{time}
+      SCHTASKS /Create /SC ONCE /TN spawn /TR #{task_command} /ST 20:10
     cleanup_command: |
       SCHTASKS /Delete /TN spawn /F >nul 2>&1
 
@@ -46,7 +42,6 @@ atomic_tests:
   auto_generated_guid: 2e5eac3e-327b-4a88-a0c0-c4057039a8dd
   description: |
       Create a task on a remote system.
-
       Upon successful execution, cmd.exe will create a scheduled task to spawn cmd.exe at 20:10 on a remote endpoint. 
   supported_platforms:
     - windows
@@ -55,10 +50,6 @@ atomic_tests:
       description: What you want to execute
       type: String
       default: C:\windows\system32\cmd.exe
-    time:
-      description: What time 24 Hour
-      type: String
-      default: 20:10
     target:
       description: Target
       type: String
@@ -66,24 +57,23 @@ atomic_tests:
     user_name:
       description: Username DOMAIN\User
       type: String
-      default: DOMAIN\user
+      default: SAKARYADLP\staff
     password:
       description: Password
       type: String
-      default: At0micStrong
+      default: Qwe.123
   executor:
     name: command_prompt
     elevation_required: true
     command: |
-      SCHTASKS /Create /S #{target} /RU #{user_name} /RP #{password} /TN "Atomic task" /TR "#{task_command}" /SC daily /ST #{time}
+      SCHTASKS /Create /S #{target} /RU #{user_name} /RP #{password} /TN "Atomic task" /TR "#{task_command}" /SC daily /ST 20:10
     cleanup_command: |
       SCHTASKS /Delete /TN "Atomic task" /F >nul 2>&1
 
 - name: Powershell Cmdlet Scheduled Task
   auto_generated_guid: af9fd58f-c4ac-4bf2-a9ba-224b71ff25fd
   description: |
-    Create an atomic scheduled task that leverages native powershell cmdlets.
-    
+    Create an atomic scheduled task that leverages native powershell cmdlets.    
     Upon successful execution, powershell.exe will create a scheduled task to spawn cmd.exe at 20:10. 
 
   supported_platforms:

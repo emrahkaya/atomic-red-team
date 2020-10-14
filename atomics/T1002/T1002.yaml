@@ -14,7 +14,7 @@ atomic_tests:
     input_file:
       description: Path that should be compressed into our output file
       type: Path
-      default: $env:USERPROFILE
+      default: $env:USERPROFILE\Desktop
     output_file:
       description: Path where resulting compressed data should be placed
       type: Path
