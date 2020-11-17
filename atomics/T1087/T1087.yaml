@@ -210,7 +210,7 @@ atomic_tests:
     adrecon_path:
       description: Path of ADRecon.ps1 file
       type: Path
-      default: $env:TEMP\ADRecon.ps1
+      default: PathToAtomicsFolder\T1087\bin\ADRecon.ps1
 
   dependency_executor_name: powershell
   dependencies:
