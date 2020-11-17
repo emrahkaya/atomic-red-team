@@ -98,7 +98,7 @@ atomic_tests:
       url_path:
         description: url to download Exe
         type: url
-        default: 'https://github.com/redcanaryco/atomic-red-team/raw/master/atomics/T1027/bin/T1027.zip'
+        default: 'https://github.com/emrahkaya/atomic-red-team/raw/feature/v6/atomics/T1027/bin/T1027.zip'
       
     dependency_executor_name: powershell
     elevation_required: true

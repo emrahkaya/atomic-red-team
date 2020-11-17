@@ -30,7 +30,7 @@ atomic_tests:
         if (Test-Path #{binary_path}) {exit 0} else {exit 1}
       get_prereq_command: |
         New-Item -Type Directory (split-path #{binary_path}) -ErrorAction ignore | Out-Null
-        Invoke-WebRequest "https://github.com/redcanaryco/atomic-red-team/raw/master/atomics/T1050/bin/AtomicService.exe" -OutFile "#{binary_path}"
+        Invoke-WebRequest "https://github.com/emrahkaya/atomic-red-team/raw/feature/v6/atomics/T1050/bin/AtomicService.exe" -OutFile "#{binary_path}"
 
   executor:
     name: command_prompt
@@ -69,7 +69,7 @@ atomic_tests:
         if (Test-Path #{binary_path}) {exit 0} else {exit 1}
       get_prereq_command: |
         New-Item -Type Directory (split-path #{binary_path}) -ErrorAction ignore | Out-Null
-        Invoke-WebRequest "https://github.com/redcanaryco/atomic-red-team/raw/master/atomics/T1050/bin/AtomicService.exe" -OutFile "#{binary_path}"
+        Invoke-WebRequest "https://github.com/emrahkaya/atomic-red-team/raw/feature/v6/atomics/T1050/bin/AtomicService.exe" -OutFile "#{binary_path}"
 
   executor:
     name: powershell

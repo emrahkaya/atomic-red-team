@@ -60,7 +60,7 @@ atomic_tests:
         if (Test-Path #{inf_to_execute}) {exit 0} else {exit 1}
       get_prereq_command: |
         New-Item -Type Directory (split-path #{inf_to_execute}) -ErrorAction ignore | Out-Null
-        Invoke-WebRequest "https://github.com/redcanaryco/atomic-red-team/raw/master/atomics/T1085/src/T1085.inf" -OutFile "#{inf_to_execute}"
+        Invoke-WebRequest "https://github.com/emrahkaya/atomic-red-team/raw/feature/v6/atomics/T1085/src/T1085.inf" -OutFile "#{inf_to_execute}"
 
   executor:
     name: command_prompt
@@ -91,7 +91,7 @@ atomic_tests:
         if (Test-Path #{inf_to_execute}) {exit 0} else {exit 1}
       get_prereq_command: |
         New-Item -Type Directory (split-path #{inf_to_execute}) -ErrorAction ignore | Out-Null
-        Invoke-WebRequest "https://github.com/redcanaryco/atomic-red-team/raw/master/atomics/T1085/src/T1085.inf" -OutFile "#{inf_to_execute}"
+        Invoke-WebRequest "https://github.com/emrahkaya/atomic-red-team/raw/feature/v6/atomics/T1085/src/T1085.inf" -OutFile "#{inf_to_execute}"
 
   executor:
     name: command_prompt
@@ -121,7 +121,7 @@ atomic_tests:
         if (Test-Path #{inf_to_execute}) {exit 0} else {exit 1}
       get_prereq_command: |
         New-Item -Type Directory (split-path #{inf_to_execute}) -ErrorAction ignore | Out-Null
-        Invoke-WebRequest "https://github.com/redcanaryco/atomic-red-team/raw/master/atomics/T1085/src/T1085_DefaultInstall.inf" -OutFile "#{inf_to_execute}"
+        Invoke-WebRequest "https://github.com/emrahkaya/atomic-red-team/raw/feature/v6/atomics/T1085/src/T1085_DefaultInstall.inf" -OutFile "#{inf_to_execute}"
 
   executor:
     name: command_prompt
@@ -151,7 +151,7 @@ atomic_tests:
         if (Test-Path #{inf_to_execute}) {exit 0} else {exit 1}
       get_prereq_command: |
         New-Item -Type Directory (split-path #{inf_to_execute}) -ErrorAction ignore | Out-Null
-        Invoke-WebRequest "https://github.com/redcanaryco/atomic-red-team/raw/master/atomics/T1085/src/T1085_DefaultInstall.inf" -OutFile "#{inf_to_execute}"
+        Invoke-WebRequest "https://github.com/emrahkaya/atomic-red-team/raw/feature/v6/atomics/T1085/src/T1085_DefaultInstall.inf" -OutFile "#{inf_to_execute}"
 
   executor:
     name: command_prompt

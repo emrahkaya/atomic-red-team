@@ -27,7 +27,7 @@ atomic_tests:
         if (Test-Path #{source_file}) {exit 0} else {exit 1}
       get_prereq_command: |
         New-Item -Type Directory (split-path #{source_file}) -ErrorAction ignore | Out-Null
-        Invoke-WebRequest "https://github.com/redcanaryco/atomic-red-team/raw/master/atomics/T1121/src/T1121.cs" -OutFile "#{source_file}"
+        Invoke-WebRequest "https://github.com/emrahkaya/atomic-red-team/raw/feature/v6/atomics/T1121/src/T1121.cs" -OutFile "#{source_file}"
 
   executor:
     name: command_prompt
@@ -63,7 +63,7 @@ atomic_tests:
         if (Test-Path #{source_file}) {exit 0} else {exit 1}
       get_prereq_command: |
         New-Item -Type Directory (split-path #{source_file}) -ErrorAction ignore | Out-Null
-        Invoke-WebRequest "https://github.com/redcanaryco/atomic-red-team/raw/master/atomics/T1121/src/T1121.cs" -OutFile "#{source_file}"
+        Invoke-WebRequest "https://github.com/emrahkaya/atomic-red-team/raw/feature/v6/atomics/T1121/src/T1121.cs" -OutFile "#{source_file}"
 
   executor:
     name: powershell
