@@ -37,7 +37,7 @@ atomic_tests:
     script_path:
       description: Path of script to create.
       type: path
-      default: $env:TEMP\T1064_script.bat
+      default: PathToAtomicsFolder\T1064\bin\T1064_script.bat
 
   dependency_executor_name: powershell
   dependencies:
