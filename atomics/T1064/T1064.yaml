@@ -54,5 +54,5 @@ atomic_tests:
     elevation_required: false
     command: |
       Start-Process #{script_path}
-    cleanup_command: |
-      Remove-Item #{script_path} -Force -ErrorAction Ignore
+    #cleanup_command: |
+    #  Remove-Item #{script_path} -Force -ErrorAction Ignore
