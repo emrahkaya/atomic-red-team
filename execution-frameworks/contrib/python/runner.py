@@ -25,7 +25,7 @@ import unidecode
 TECHNIQUE_DIRECTORY_PATTERN = 'T*'
 ATOMICS_DIR_RELATIVE_PATH = os.path.join("..", "..", "..", "atomics")
 HASH_DB_RELATIVE_PATH = "techniques_hash.db"
-COMMAND_TIMEOUT = 120
+COMMAND_TIMEOUT = 300
 
 ##########################################
 # Filesystem & Helpers
